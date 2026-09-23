@@ -23,7 +23,7 @@ footer{padding:28px 0;background:var(--ink);color:rgba(255,255,255,.62);font-siz
 /* Contact form modal */
 
 body.modal-open{overflow:hidden}
-.open-contact-form{border:0;cursor:pointer;margin:28px auto 0}
+.open-contact-form{border:0;cursor:pointer}
 .modal{display:none;position:fixed;inset:0;z-index:2000;padding:24px;background:rgba(10,25,32,.68);backdrop-filter:blur(6px);overflow:auto}
 .modal-content{position:relative;width:min(100%,560px);margin:6vh auto;background:#fff;border-radius:18px;padding:34px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
 .modal-content h2{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.15;letter-spacing:-.04em;margin-top:8px}
