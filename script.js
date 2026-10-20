@@ -5,8 +5,8 @@ let lastFocusedElement = null;
 
 function getFocusableElements() {
   if (!modal) return [];
-  return [...modal.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')]
-    .filter(element => element.getAttribute('aria-hidden') !== 'true');
+  return [...modal.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+    .filter(element => element.getAttribute('aria-hidden') !== 'true' && !element.closest('.hidden-field'));
 }
 
 function openModal(event) {
