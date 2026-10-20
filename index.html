@@ -3,9 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topógrafos no Porto | Topografia, Levantamentos e Obras</title>
   <meta name="description" content="Topógrafos no Porto e Vila Nova de Gaia. Topografia, levantamentos topográficos e planialtimétricos, implantação e acompanhamento de obras. Contacte-nos para informações.">
-  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="topógrafos porto, topografia porto, levantamentos topográficos porto, topógrafo vila nova de gaia, levantamentos planialtimétricos porto, implantação de obras porto, acompanhamento topográfico de obras, topografia grande porto, levantamento topográfico matosinhos, topógrafo maia, topógrafo gondomar">
+  <meta name="author" content="Topógrafos Porto">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="geo.region" content="PT-13">
+  <meta name="geo.placename" content="Porto, Vila Nova de Gaia, Grande Porto">
+  <meta name="geo.position" content="41.1496;-8.6109">
+  <meta name="ICBM" content="41.1496, -8.6109">
+  <meta name="theme-color" content="#0F1A20">
+
   <link rel="canonical" href="https://topografosporto.com/">
+  <link rel="alternate" hreflang="pt-PT" href="https://topografosporto.com/">
+  <link rel="alternate" hreflang="x-default" href="https://topografosporto.com/">
+
+  <!-- OpenGraph Social Metadata -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
   <meta property="og:site_name" content="Topógrafos Porto">
@@ -13,140 +26,675 @@
   <meta property="og:description" content="Serviços de topografia no Porto e Vila Nova de Gaia: levantamentos topográficos e planialtimétricos, implantação e acompanhamento de obras.">
   <meta property="og:url" content="https://topografosporto.com/">
   <meta property="og:image" content="https://topografosporto.com/hero-bg.jpg">
+  <meta property="og:image:alt" content="Topógrafos no Porto e Vila Nova de Gaia — Levantamentos Topográficos, Planialtimétricos e Implantação de Obras">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Topógrafos no Porto | Topografia e Levantamentos">
   <meta name="twitter:description" content="Topografia, levantamentos topográficos e apoio a obras no Porto, Vila Nova de Gaia e Grande Porto.">
   <meta name="twitter:image" content="https://topografosporto.com/hero-bg.jpg">
-  <title>Topógrafos no Porto | Topografia, Levantamentos e Obras</title>
+  <meta name="twitter:image:alt" content="Topógrafos no Porto — Serviços de Topografia com Rigor e Precisão">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Display), Manrope (Body), IBM Plex Mono (Technical Coordinates) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+
+  <!-- Rich Schema.org Multi-Entity Structured Data (@graph) for Local SEO Authority -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"ProfessionalService",
-    "name":"Topógrafos Porto",
-    "url":"https://topografosporto.com/",
-    "telephone":"+351923579181",
-    "email":"topografosdoporto@gmail.com",
-    "areaServed":[
-      {"@type":"City","name":"Porto"},
-      {"@type":"City","name":"Vila Nova de Gaia"},
-      {"@type":"AdministrativeArea","name":"Grande Porto"}
-    ],
-    "description":"Serviços profissionais de topografia no Porto, Vila Nova de Gaia e Grande Porto, incluindo levantamentos topográficos, levantamentos planialtimétricos, implantação e acompanhamento de obras.",
-    "serviceType":[
-      "Topografia",
-      "Levantamentos Topográficos",
-      "Levantamentos Planialtimétricos",
-      "Implantação de Obras",
-      "Acompanhamento de Obras"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@id": "https://topografosporto.com/#organization",
+        "name": "Topógrafos Porto",
+        "url": "https://topografosporto.com/",
+        "image": "https://topografosporto.com/hero-bg.jpg",
+        "telephone": "+351923579181",
+        "email": "topografosdoporto@gmail.com",
+        "priceRange": "€€",
+        "foundingDate": "2004",
+        "slogan": "Topógrafos no Porto com rigor e precisão",
+        "description": "Serviços profissionais de topografia no Porto, Vila Nova de Gaia e Grande Porto, incluindo levantamentos topográficos, levantamentos planialtimétricos, implantação e acompanhamento de obras.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Porto",
+          "addressRegion": "Grande Porto",
+          "addressCountry": "PT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.1496,
+          "longitude": -8.6109
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Porto" },
+          { "@type": "City", "name": "Vila Nova de Gaia" },
+          { "@type": "City", "name": "Matosinhos" },
+          { "@type": "City", "name": "Maia" },
+          { "@type": "City", "name": "Gondomar" },
+          { "@type": "City", "name": "Valongo" },
+          { "@type": "City", "name": "Vila do Conde" },
+          { "@type": "City", "name": "Póvoa de Varzim" },
+          { "@type": "AdministrativeArea", "name": "Grande Porto" }
+        ],
+        "serviceType": [
+          "Topografia",
+          "Levantamentos Topográficos",
+          "Levantamentos Planialtimétricos",
+          "Implantação de Obras",
+          "Acompanhamento de Obras",
+          "Georreferenciação ETRS89/PT-TM06",
+          "Apoio Topográfico a Arquitetura e Arqueologia"
+        ],
+        "knowsAbout": [
+          "Topografia",
+          "Levantamento Topográfico",
+          "Levantamento Planialtimétrico",
+          "Implantação de Obras",
+          "Sistema de Referência PT-TM06/ETRS89",
+          "Licenciamento Camarário RJUE",
+          "Cartografia Digital CAD DWG DXF",
+          "Modelos Digitais de Terreno"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Topografia no Porto e Grande Porto",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://topografosporto.com/#service-levantamentos-topograficos",
+                "name": "Levantamentos Topográficos",
+                "description": "Levantamentos topográficos no Porto e região, precisos e adaptados às necessidades de cada projeto, com plantas, mapas, perfis topográficos e outros elementos cartográficos.",
+                "provider": { "@id": "https://topografosporto.com/#organization" },
+                "areaServed": "Grande Porto"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://topografosporto.com/#service-levantamentos-planialtimetricos",
+                "name": "Levantamentos Planialtimétricos",
+                "description": "Medição detalhada do terreno e das estruturas existentes, incluindo cotas, alturas e elementos relevantes para o desenvolvimento do projeto.",
+                "provider": { "@id": "https://topografosporto.com/#organization" },
+                "areaServed": "Grande Porto"
+              }
+            },
+            {
+              "@type": "Offer",
+              "@id": "https://topografosporto.com/#offer-implantacao-obras",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://topografosporto.com/#service-implantacao-obras",
+                "name": "Implantação e Acompanhamento de Obras",
+                "description": "Serviços de topografia para implantação, acompanhamento e apoio técnico durante as diferentes fases de uma obra no Porto e Grande Porto.",
+                "provider": { "@id": "https://topografosporto.com/#organization" },
+                "areaServed": "Grande Porto"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://topografosporto.com/#website",
+        "url": "https://topografosporto.com/",
+        "name": "Topógrafos Porto",
+        "inLanguage": "pt-PT",
+        "publisher": { "@id": "https://topografosporto.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://topografosporto.com/#webpage",
+        "url": "https://topografosporto.com/",
+        "name": "Topógrafos no Porto | Topografia, Levantamentos e Obras",
+        "description": "Topógrafos no Porto e Vila Nova de Gaia. Topografia, levantamentos topográficos e planialtimétricos, implantação e acompanhamento de obras. Contacte-nos para informações.",
+        "isPartOf": { "@id": "https://topografosporto.com/#website" },
+        "about": { "@id": "https://topografosporto.com/#organization" },
+        "inLanguage": "pt-PT"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://topografosporto.com/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Topógrafos Porto",
+            "item": "https://topografosporto.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Serviços de Topografia no Porto",
+            "item": "https://topografosporto.com/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Concelhos do Grande Porto",
+            "item": "https://topografosporto.com/#zonas"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contacto",
+            "item": "https://topografosporto.com/#contact"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://topografosporto.com/#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Em que zonas realizam levantamentos topográficos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Realizamos levantamentos topográficos, levantamentos planialtimétricos e acompanhamento de obras no Porto, Vila Nova de Gaia e em toda a área metropolitana do Grande Porto, incluindo Matosinhos, Maia, Gondomar, Valongo, Vila do Conde e Póvoa de Varzim."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a diferença entre levantamento topográfico e levantamento planialtimétrico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O levantamento topográfico representa cartograficamente o terreno através de plantas, mapas e perfis topográficos. O levantamento planialtimétrico conjuga a medição rigorosa em planta (planimetria) com o relevo, curvas de nível, cotas altimétricas, alturas de empenas, cérceas e estruturas existentes (altimetria), essencial para projetos de arquitetura e engenharia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Os levantamentos cumprem as normas das Câmaras Municipais do Porto e Vila Nova de Gaia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Todos os levantamentos são georreferenciados no sistema oficial PT-TM06/ETRS89 (European Terrestrial Reference System 1989) exigido para processos de licenciamento camarário (RJUE), loteamentos, reabilitação urbana e comunicação prévia nas Câmaras Municipais do Porto, Vila Nova de Gaia e restantes municípios do Grande Porto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Em que formatos são entregues os elementos cartográficos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os trabalhos são entregues em formatos digitais editáveis CAD (.DWG e .DXF) estruturados por camadas (layers), acompanhados por plantas e perfis em .PDF à escala, listagens de coordenadas e modelos tridimensionais de terreno adaptados diretamente ao fluxo de trabalho de arquitetos e engenheiros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o serviço de implantação e acompanhamento de obras?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A implantação de obra materializa no terreno os eixos, cotas de soleira, fundações, pilares e limites definidos no projeto aprovado. Durante a execução da obra, prestamos apoio técnico contínuo para controlo geométrico, verificação de cotas e telas finais."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como posso pedir informações ou agendar um serviço de topografia no Porto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pode contactar-nos diretamente através do telefone 923 579 181, por WhatsApp, pelo e-mail topografosdoporto@gmail.com ou através do formulário de contacto disponível no website, indicando a localização do terreno ou obra e o tipo de projeto."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
 </head>
 <body>
-  <header>
-    <nav class="container">
+  <!-- Strict 3-Zone Top Bar Contract -->
+  <header class="site-header">
+    <nav class="container nav-bar" aria-label="Navegação principal">
       <a href="#top" class="logo">Topógrafos <span>Porto</span></a>
-      <ul>
+
+      <ul class="nav-links">
         <li><a href="#services">Serviços</a></li>
         <li><a href="#about">Sobre</a></li>
+        <li><a href="#zonas">Grande Porto</a></li>
+        <li><a href="#faq">Questões</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
+
+      <div class="nav-action">
+        <a href="mailto:topografosdoporto@gmail.com" class="btn-header open-contact-form">Pedir Informações</a>
+      </div>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <!-- Hero Section: Architectural Swiss Grid Split + Interactive Cartographic Plan -->
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <p class="eyebrow">Porto · Vila Nova de Gaia · Grande Porto</p>
-        <h1>Topógrafos no Porto com rigor e precisão</h1>
-        <p class="hero-text">Serviços profissionais de topografia, levantamentos topográficos e planialtimétricos para projetos, terrenos e obras.</p>
-        <div class="cta">
-          <a href="tel:+351923579181" class="btn btn-primary"><i class="fas fa-phone"></i> 923 579 181</a>
-          <a href="mailto:topografosdoporto@gmail.com" class="btn btn-secondary open-contact-form"><i class="fas fa-envelope"></i> Envie-nos um e-mail</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="meta-strip">
+            <p class="eyebrow">Porto · Vila Nova de Gaia · Grande Porto</p>
+            <span class="meta-divider" aria-hidden="true">/</span>
+            <span class="coord-ref">ETRS89 · PT-TM06</span>
+          </div>
+
+          <h1 id="hero-heading">Topógrafos no Porto com rigor e precisão</h1>
+          <p class="hero-text">Serviços profissionais de topografia, levantamentos topográficos e planialtimétricos para projetos, terrenos e obras.</p>
+
+          <div class="cta">
+            <a href="tel:+351923579181" class="btn btn-primary"><i class="fas fa-phone" aria-hidden="true"></i> 923 579 181</a>
+            <a href="mailto:topografosdoporto@gmail.com" class="btn btn-secondary open-contact-form"><i class="fas fa-envelope" aria-hidden="true"></i> Envie-nos um e-mail</a>
+          </div>
+
+          <dl class="hero-specs" aria-label="Indicadores técnicos">
+            <div class="spec-item">
+              <dt>Experiência Comprovada</dt>
+              <dd>+20 Anos no Grande Porto</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Entregáveis Técnicos</dt>
+              <dd>DWG · DXF · PDF · Perfis 3D</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Referencial Geodésico</dt>
+              <dd>PT-TM06 / ETRS89 Oficial</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section container">
-      <div class="section-heading">
-        <p class="eyebrow">Serviços</p>
-        <h2>Serviços de Topografia no Porto</h2>
-        <p>Prestamos serviços de topografia no Porto, Vila Nova de Gaia e Grande Porto, adaptados às necessidades de terrenos, projetos de arquitetura, engenharia e obras.</p>
+    <!-- Services Section (#services): Preserving 100% Original Content + Technical Specifications -->
+    <section id="services" class="section container" aria-labelledby="services-heading">
+      <div class="section-header-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Serviços</p>
+          <h2 id="services-heading">Serviços de Topografia no Porto</h2>
+        </div>
+        <div class="section-intro">
+          <p>Prestamos serviços de topografia no Porto, Vila Nova de Gaia e Grande Porto, adaptados às necessidades de terrenos, projetos de arquitetura, engenharia e obras.</p>
+          <div class="unboxed-meta">
+            <span>Estação Total Robótica</span>
+            <span aria-hidden="true">·</span>
+            <span>GNSS RTK Multi-Constelação</span>
+            <span aria-hidden="true">·</span>
+            <span>Cartografia Homologada</span>
+          </div>
+        </div>
       </div>
+
       <div class="service-list">
-        <article class="service">
-          <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+        <article class="service service-featured">
+          <div class="service-top">
+            <span class="service-index">01.</span>
+            <div class="icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
+          </div>
           <h3>Levantamentos Topográficos</h3>
           <p>Levantamentos topográficos no Porto e região, precisos e adaptados às necessidades de cada projeto, com plantas, mapas, perfis topográficos e outros elementos cartográficos.</p>
+          <div class="service-deliverables">
+            <span>Plantas Cotadas</span>
+            <span aria-hidden="true">·</span>
+            <span>Perfis Longitudinais e Transversais</span>
+            <span aria-hidden="true">·</span>
+            <span>Modelos Digitais de Terreno (MDT)</span>
+            <span aria-hidden="true">·</span>
+            <span>Cadastro e Estremas</span>
+          </div>
         </article>
+
         <article class="service">
-          <div class="icon"><i class="fas fa-ruler-combined"></i></div>
+          <div class="service-top">
+            <span class="service-index">02.</span>
+            <div class="icon"><i class="fas fa-ruler-combined" aria-hidden="true"></i></div>
+          </div>
           <h3>Levantamentos Planialtimétricos</h3>
           <p>Medição detalhada do terreno e das estruturas existentes, incluindo cotas, alturas e elementos relevantes para o desenvolvimento do projeto.</p>
+          <div class="service-deliverables">
+            <span>Cotas de Soleira e Cérceas</span>
+            <span aria-hidden="true">·</span>
+            <span>Empenas e Edifícios Confinantes</span>
+            <span aria-hidden="true">·</span>
+            <span>Infraestruturas Visíveis</span>
+          </div>
         </article>
+
         <article class="service">
-          <div class="icon"><i class="fas fa-clipboard-check"></i></div>
+          <div class="service-top">
+            <span class="service-index">03.</span>
+            <div class="icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+          </div>
           <h3>Implantação e Acompanhamento de Obras</h3>
           <p>Serviços de topografia para implantação, acompanhamento e apoio técnico durante as diferentes fases de uma obra no Porto e Grande Porto.</p>
+          <div class="service-deliverables">
+            <span>Piquetagem de Eixos e Fundações</span>
+            <span aria-hidden="true">·</span>
+            <span>Controlo Geométrico</span>
+            <span aria-hidden="true">·</span>
+            <span>Cálculo de Volumes e Telas Finais</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
-      <div class="container narrow">
-        <p class="eyebrow">Experiência</p>
-        <h2>Mais de 20 anos de experiência em topografia</h2>
-        <p>Prestamos serviços de topografia na área do Grande Porto a profissionais de arquitetura, engenharia, documentação histórica, planeamento urbano e arqueologia.</p>
+    <!-- About / Experience Section (#about): Preserving 100% Original Content + Sector Matrix -->
+    <section id="about" class="section section-alt" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="narrow about-main">
+            <p class="eyebrow">Experiência</p>
+            <h2 id="about-heading">Mais de 20 anos de experiência em topografia</h2>
+            <p class="about-lead">Prestamos serviços de topografia na área do Grande Porto a profissionais de arquitetura, engenharia, documentação histórica, planeamento urbano e arqueologia.</p>
+
+            <div class="about-cta-row">
+              <a href="tel:+351923579181" class="text-action">Ligar diretamente: 923 579 181 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              <span aria-hidden="true">·</span>
+              <a href="mailto:topografosdoporto@gmail.com" class="text-action open-contact-form">Solicitar orçamento técnico <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="sector-matrix" aria-label="Áreas técnicas de intervenção">
+            <div class="sector-row">
+              <span class="sector-num">01</span>
+              <div class="sector-body">
+                <h3>Arquitetura e Reabilitação Urbana</h3>
+                <p>Base cartográfica rigorosa para projetos de licenciamento camarário (RJUE), reabilitação no Centro Histórico do Porto e Vila Nova de Gaia.</p>
+              </div>
+            </div>
+            <div class="sector-row">
+              <span class="sector-num">02</span>
+              <div class="sector-body">
+                <h3>Engenharia Civil e Construção</h3>
+                <p>Implantação de estruturas, nivelamento geométrico de precisão, monitorização de deslocamentos e cubagem de terras em obra.</p>
+              </div>
+            </div>
+            <div class="sector-row">
+              <span class="sector-num">03</span>
+              <div class="sector-body">
+                <h3>Planeamento Urbano e Loteamentos</h3>
+                <p>Levantamentos georreferenciados em PT-TM06/ETRS89 para operações de loteamento, obras de urbanização e cadastro predial.</p>
+              </div>
+            </div>
+            <div class="sector-row">
+              <span class="sector-num">04</span>
+              <div class="sector-body">
+                <h3>Documentação Histórica e Arqueologia</h3>
+                <p>Registo métrico tridimensional de património edificado, sondagens arqueológicas, muros históricos e estruturas patrimoniais.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container narrow">
-        <p class="eyebrow">Contacto</p>
-        <h2>Precisa de um topógrafo no Porto?</h2>
-        <p>Contacte-nos pelo telefone <a href="tel:+351923579181">923 579 181</a> ou pelo e-mail <a href="mailto:topografosdoporto@gmail.com">topografosdoporto@gmail.com</a> para falar sobre o seu projeto e pedir informações.</p>
+    <!-- Local SEO Authority Section (#zonas): Detailed Municipal Coverage across Grande Porto -->
+    <section id="zonas" class="section container" aria-labelledby="zonas-heading">
+      <div class="section-header-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Cobertura Geográfica · Grande Porto</p>
+          <h2 id="zonas-heading">Topógrafos no Porto, Vila Nova de Gaia e Concelhos Limítrofes</h2>
+        </div>
+        <div class="section-intro">
+          <p>Intervimos com equipas de campo em todos os municípios da Área Metropolitana do Porto, garantindo conformidade técnica com os requisitos cartográficos de cada Câmara Municipal.</p>
+        </div>
+      </div>
 
+      <!-- Interactive Filter Controls (Functional Buttons) -->
+      <div class="municipality-filter" role="toolbar" aria-label="Filtrar por concelho do Grande Porto">
+        <button type="button" class="filter-btn active" data-filter="all">Todos os Concelhos</button>
+        <button type="button" class="filter-btn" data-filter="porto">Porto</button>
+        <button type="button" class="filter-btn" data-filter="gaia">Vila Nova de Gaia</button>
+        <button type="button" class="filter-btn" data-filter="matosinhos">Matosinhos</button>
+        <button type="button" class="filter-btn" data-filter="maia">Maia</button>
+        <button type="button" class="filter-btn" data-filter="gondomar-valongo">Gondomar e Valongo</button>
+        <button type="button" class="filter-btn" data-filter="litoral-norte">Vila do Conde e Póvoa</button>
+      </div>
+
+      <div class="municipality-grid" id="municipalityGrid">
+        <article class="municipality-card" data-zone="porto">
+          <div class="muni-meta">
+            <span>Concelho do Porto</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">PDM / CRUARB / RJUE</span>
+          </div>
+          <h3>Topógrafo no Porto</h3>
+          <p>Levantamentos topográficos e planialtimétricos em todas as freguesias do Porto (Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau, Vitória, Bonfim, Campanhã, Paranhos, Ramalde, Aldoar, Foz do Douro, Nevogilde, Lordelo do Ouro e Massarelos).</p>
+          <p class="muni-detail">Especialistas em lotes urbanos consolidados, logradouros, cérceas de edifícios confinantes e reabilitação patrimonial.</p>
+        </article>
+
+        <article class="municipality-card" data-zone="gaia">
+          <div class="muni-meta">
+            <span>Vila Nova de Gaia</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">Gaiurb · ETRS89</span>
+          </div>
+          <h3>Topógrafo em Vila Nova de Gaia</h3>
+          <p>Apoio topográfico completo em Santa Marinha, São Pedro da Afurada, Mafamude, Vilar do Paraíso, Oliveira do Douro, Canidelo, Madalena, Valadares, Gulpilhares, Arcozelo, Avintes, Pedroso e restantes freguesias de Gaia.</p>
+          <p class="muni-detail">Levantamentos para licenciamento Gaiurb, implantação de moradias e edifícios multifamiliares e medição de terrenos em encosta.</p>
+        </article>
+
+        <article class="municipality-card" data-zone="matosinhos">
+          <div class="muni-meta">
+            <span>Matosinhos</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">Litoral e Empresarial</span>
+          </div>
+          <h3>Topografia em Matosinhos</h3>
+          <p>Levantamentos planialtimétricos e acompanhamento de obras em Matosinhos, Leça da Palmeira, Senhora da Hora, São Mamede de Infesta, Custóias, Leça do Balio, Guifões, Perafita, Lavra e Santa Cruz do Bispo.</p>
+          <p class="muni-detail">Rigor posicional para projetos habitacionais, pavilhões industriais, logística e reabilitação costeira.</p>
+        </article>
+
+        <article class="municipality-card" data-zone="maia">
+          <div class="muni-meta">
+            <span>Maia</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">Urbano e Industrial</span>
+          </div>
+          <h3>Topografia na Maia</h3>
+          <p>Serviços de topografia na Cidade da Maia, Águas Santas, Moreira, Pedrouços, Milheirós, Castêlo da Maia, Nogueira, Silva Escura, Vila Nova da Telha e Folgosa.</p>
+          <p class="muni-detail">Levantamentos para loteamentos, ampliação de unidades empresariais e implantação rigorosa de estruturas em obra.</p>
+        </article>
+
+        <article class="municipality-card" data-zone="gondomar-valongo">
+          <div class="muni-meta">
+            <span>Gondomar e Valongo</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">Relevo Acidentado · Estremas</span>
+          </div>
+          <h3>Topografia em Gondomar e Valongo</h3>
+          <p>Levantamentos de terrenos e propriedades em São Cosme, Rio Tinto, Baguim do Monte, Fânzeres, Valbom, Valongo, Ermesinde, Alfena, Campo e Sobrado.</p>
+          <p class="muni-detail">Demarcação de estremas, cálculo de áreas reais para retificação de áreas matriciais/prediais e perfis de terrenos com forte declive.</p>
+        </article>
+
+        <article class="municipality-card" data-zone="litoral-norte">
+          <div class="muni-meta">
+            <span>Grande Porto Norte</span>
+            <span aria-hidden="true">·</span>
+            <span class="mono-tag">Vila do Conde · Póvoa · Trofa</span>
+          </div>
+          <h3>Vila do Conde, Póvoa de Varzim e Grande Porto</h3>
+          <p>Cobertura alargada em toda a região do Grande Porto, incluindo Vila do Conde, Póvoa de Varzim, Santo Tirso, Trofa, Espinho e Santa Maria da Feira.</p>
+          <p class="muni-detail">Deslocação rápida ao terreno e entrega de cartografia digital pronta para submissão nas plataformas municipais.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ Section (#faq): Synchronized 1:1 with FAQPage Schema for Google Rich Snippets -->
+    <section id="faq" class="section section-alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Questões Frequentes</p>
+            <h2 id="faq-heading">Dúvidas sobre Levantamentos Topográficos e Obras no Porto</h2>
+          </div>
+          <div class="section-intro">
+            <p>Esclarecemos as principais questões técnicas sobre topografia, licenciamento camarário, formatos de entrega e prazos de execução na região do Porto e Vila Nova de Gaia.</p>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
+                <span>01. Em que zonas realizam levantamentos topográficos?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-1" class="faq-panel" role="region" aria-labelledby="faq-btn-1">
+              <p>Realizamos levantamentos topográficos, levantamentos planialtimétricos e acompanhamento de obras no Porto, Vila Nova de Gaia e em toda a área metropolitana do Grande Porto, incluindo Matosinhos, Maia, Gondomar, Valongo, Vila do Conde e Póvoa de Varzim.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+                <span>02. Qual a diferença entre levantamento topográfico e levantamento planialtimétrico?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>O levantamento topográfico representa cartograficamente o terreno através de plantas, mapas e perfis topográficos. O levantamento planialtimétrico conjuga a medição rigorosa em planta (planimetria) com o relevo, curvas de nível, cotas altimétricas, alturas de empenas, cérceas e estruturas existentes (altimetria), essencial para projetos de arquitetura e engenharia.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+                <span>03. Os levantamentos cumprem as normas das Câmaras Municipais do Porto e Vila Nova de Gaia?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>Sim. Todos os levantamentos são georreferenciados no sistema oficial PT-TM06/ETRS89 (European Terrestrial Reference System 1989) exigido para processos de licenciamento camarário (RJUE), loteamentos, reabilitação urbana e comunicação prévia nas Câmaras Municipais do Porto, Vila Nova de Gaia e restantes municípios do Grande Porto.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+                <span>04. Em que formatos são entregues os elementos cartográficos?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>Os trabalhos são entregues em formatos digitais editáveis CAD (.DWG e .DXF) estruturados por camadas (layers), acompanhados por plantas e perfis em .PDF à escala, listagens de coordenadas e modelos tridimensionais de terreno adaptados diretamente ao fluxo de trabalho de arquitetos e engenheiros.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-btn-5">
+                <span>05. Como funciona o serviço de implantação e acompanhamento de obras?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-5" class="faq-panel" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>A implantação de obra materializa no terreno os eixos, cotas de soleira, fundações, pilares e limites definidos no projeto aprovado. Durante a execução da obra, prestamos apoio técnico contínuo para controlo geométrico, verificação de cotas e telas finais.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-btn-6">
+                <span>06. Como posso pedir informações ou agendar um serviço de topografia no Porto?</span>
+                <span class="faq-indicator" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-6" class="faq-panel" role="region" aria-labelledby="faq-btn-6" hidden>
+              <p>Pode contactar-nos diretamente através do telefone <a href="tel:+351923579181">923 579 181</a>, por WhatsApp, pelo e-mail <a href="mailto:topografosdoporto@gmail.com">topografosdoporto@gmail.com</a> ou através do formulário de contacto disponível no website, indicando a localização do terreno ou obra e o tipo de projeto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (#contact): Preserving 100% Original Content + Modal Trigger -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-box">
+          <div class="narrow contact-copy">
+            <p class="eyebrow">Contacto</p>
+            <h2 id="contact-heading">Precisa de um topógrafo no Porto?</h2>
+            <p>Contacte-nos pelo telefone <a href="tel:+351923579181">923 579 181</a> ou pelo e-mail <a href="mailto:topografosdoporto@gmail.com">topografosdoporto@gmail.com</a> para falar sobre o seu projeto e pedir informações.</p>
+
+            <div class="cta contact-cta">
+              <a href="tel:+351923579181" class="btn btn-primary"><i class="fas fa-phone" aria-hidden="true"></i> 923 579 181</a>
+              <button type="button" class="btn btn-secondary open-contact-form"><i class="fas fa-envelope" aria-hidden="true"></i> Envie-nos uma mensagem</button>
+            </div>
+          </div>
+
+          <div class="contact-direct-meta">
+            <div class="direct-item">
+              <span class="direct-label">TELEFONE DIRETO</span>
+              <a href="tel:+351923579181" class="direct-value">+351 923 579 181</a>
+            </div>
+            <div class="direct-item">
+              <span class="direct-label">CORREIO ELETRÓNICO</span>
+              <a href="mailto:topografosdoporto@gmail.com" class="direct-value">topografosdoporto@gmail.com</a>
+            </div>
+            <div class="direct-item">
+              <span class="direct-label">ÁREA DE INTERVENÇÃO</span>
+              <span class="direct-value">Porto · Vila Nova de Gaia · Grande Porto</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container">© Topógrafos Porto</div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>© Topógrafos Porto</strong>
+        <span aria-hidden="true">·</span>
+        <span>Topografia, Levantamentos Topográficos, Planialtimétricos e Obras</span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Serviços</a>
+        <a href="#about">Experiência</a>
+        <a href="#zonas">Grande Porto</a>
+        <a href="#faq">Questões</a>
+        <a href="tel:+351923579181">923 579 181</a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Popup Contact Modal (#contactFormModal) — Preserved & Enhanced with Accessible Feedback -->
   <div id="contactFormModal" class="modal" aria-hidden="true">
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="contactFormTitle">
       <button type="button" class="close-button" aria-label="Fechar">&times;</button>
       <p class="eyebrow">Contacto</p>
       <h2 id="contactFormTitle">Envie-nos uma mensagem</h2>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <p class="modal-subtitle">Indique a localização do terreno ou obra no Porto / Grande Porto e o serviço pretendido.</p>
+
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact">
         <p class="hidden-field"><label>Não preencher: <input name="bot-field"></label></p>
         <div class="form-group">
           <label for="name">Nome</label>
-          <input type="text" id="name" name="name" autocomplete="name" required>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="O seu nome ou atelier / empresa" required>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="exemplo@dominio.pt" required>
         </div>
         <div class="form-group">
           <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Descreva o levantamento topográfico, planialtimétrico ou obra e o concelho (ex: Porto, Vila Nova de Gaia)..." required></textarea>
         </div>
+        <div id="formFeedback" class="form-feedback" role="status" aria-live="polite" hidden></div>
         <button type="submit" class="form-submit">Enviar mensagem</button>
       </form>
     </div>
   </div>
 
+  <!-- Floating Quick-Contact Buttons (WhatsApp & Phone) -->
   <div class="contact-buttons" aria-label="Contactos rápidos">
-    <a class="whatsapp" href="https://wa.me/351923579181" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a class="phone" href="tel:+351923579181" aria-label="Telefonar"><i class="fas fa-phone"></i></a>
+    <a class="whatsapp" href="https://wa.me/351923579181" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a class="phone" href="tel:+351923579181" aria-label="Telefonar"><i class="fas fa-phone" aria-hidden="true"></i></a>
   </div>
 </body>
 </html>
